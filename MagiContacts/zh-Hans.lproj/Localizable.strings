@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MagiContacts
+
+  Created by Hefeng Xu on 7/29/23.
+  
+*/
+"excute" = "执行";
+
+"phonetic_setting_options" = "设置选项";
+"remove_tone_marks" = "移除声调符号";
+"remove_tone_marks_description" = "从拼音文本中移除声调符号。";
+"add_pinyin_abbreviation" = "增加拼音缩写";
+"phonetic_override" = "复写";
+"phonetic_override_description" = "";

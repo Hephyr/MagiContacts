@@ -14,6 +14,9 @@
 		859A93A22A74A5DD00F34C94 /* MagiContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A93A12A74A5DD00F34C94 /* MagiContactsTests.swift */; };
 		859A93AC2A74A5DD00F34C94 /* MagiContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A93AB2A74A5DD00F34C94 /* MagiContactsUITests.swift */; };
 		859A93AE2A74A5DD00F34C94 /* MagiContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A93AD2A74A5DD00F34C94 /* MagiContactsUITestsLaunchTests.swift */; };
+		859A93BD2A74ADE900F34C94 /* PhoneticContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A93BC2A74ADE900F34C94 /* PhoneticContactsView.swift */; };
+		859A93C02A74B21C00F34C94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 859A93C22A74B21C00F34C94 /* Localizable.strings */; };
+		859A93C52A75150500F34C94 /* PhoneticContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A93C42A75150500F34C94 /* PhoneticContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 		859A93A72A74A5DD00F34C94 /* MagiContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A93AB2A74A5DD00F34C94 /* MagiContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiContactsUITests.swift; sourceTree = "<group>"; };
 		859A93AD2A74A5DD00F34C94 /* MagiContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		859A93BC2A74ADE900F34C94 /* PhoneticContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticContactsView.swift; sourceTree = "<group>"; };
+		859A93C12A74B21C00F34C94 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		859A93C32A74B2C400F34C94 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		859A93C42A75150500F34C94 /* PhoneticContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticContacts.swift; sourceTree = "<group>"; };
+		859A93C62A75225100F34C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,12 @@
 		859A938E2A74A5DC00F34C94 /* MagiContacts */ = {
 			isa = PBXGroup;
 			children = (
+				859A93C62A75225100F34C94 /* Info.plist */,
 				859A938F2A74A5DC00F34C94 /* MagiContactsApp.swift */,
 				859A93912A74A5DC00F34C94 /* ContentView.swift */,
+				859A93BC2A74ADE900F34C94 /* PhoneticContactsView.swift */,
+				859A93C42A75150500F34C94 /* PhoneticContacts.swift */,
+				859A93C22A74B21C00F34C94 /* Localizable.strings */,
 				859A93932A74A5DD00F34C94 /* Assets.xcassets */,
 				859A93952A74A5DD00F34C94 /* MagiContacts.entitlements */,
 				859A93962A74A5DD00F34C94 /* Preview Content */,
@@ -210,11 +222,12 @@
 			};
 			buildConfigurationList = 859A93872A74A5DC00F34C94 /* Build configuration list for PBXProject "MagiContacts" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 859A93832A74A5DC00F34C94;
 			productRefGroup = 859A938D2A74A5DC00F34C94 /* Products */;
@@ -234,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				859A93982A74A5DD00F34C94 /* Preview Assets.xcassets in Resources */,
+				859A93C02A74B21C00F34C94 /* Localizable.strings in Resources */,
 				859A93942A74A5DD00F34C94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859A93BD2A74ADE900F34C94 /* PhoneticContactsView.swift in Sources */,
 				859A93922A74A5DC00F34C94 /* ContentView.swift in Sources */,
+				859A93C52A75150500F34C94 /* PhoneticContacts.swift in Sources */,
 				859A93902A74A5DC00F34C94 /* MagiContactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,11 +312,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		859A93C22A74B21C00F34C94 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				859A93C12A74B21C00F34C94 /* en */,
+				859A93C32A74B2C400F34C94 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		859A93AF2A74A5DD00F34C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -359,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -415,8 +445,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MagiContacts/Preview Content\"";
+				DEVELOPMENT_TEAM = NRQR6B4R63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagiContacts/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -451,8 +483,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MagiContacts/Preview Content\"";
+				DEVELOPMENT_TEAM = NRQR6B4R63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagiContacts/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

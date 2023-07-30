@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MagiContacts
+
+  Created by Hefeng Xu on 7/29/23.
+  
+*/
+"excute" = "Excute";
+
+"phonetic_setting_options" = "Setting Options";
+"remove_tone_marks" = "Remove tone marks";
+"remove_tone_marks_description" = "Remove tone marks from the pinyin text.";
+"add_pinyin_abbreviation" = "Add pinyin abbreviation";
